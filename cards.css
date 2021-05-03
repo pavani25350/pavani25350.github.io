@@ -31,7 +31,7 @@ body
 .cardimage
 {
 	grid-area: image;
-	background: url(bg2.jpg);
+	background: url(https://images.pexels.com/photos/1008000/pexels-photo-1008000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 	height: 100%;
 	background-position: center;
 	border-top-left-radius: 15px;

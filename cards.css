@@ -1,0 +1,113 @@
+body
+{
+	margin:0;
+	padding:0;
+	width:100vw;
+	height: 100vh;
+	display: flex;
+	background: linear-gradient(blue,orange);
+	background-size: cover;
+	justify-content:center;
+	align-items: center;
+	overflow: hidden;
+
+
+}
+
+.card
+{
+	display: grid;
+    grid-template-areas: "image"  "text" "stats";
+	grid-template-columns: 300px;
+	grid-template-rows: 230px 210px 80px;
+
+	border-radius: 20px;
+	background: white;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+	text-align: center;
+	transition: 0.5s ease;
+}
+
+.cardimage
+{
+	grid-area: image;
+	background: url(bg2.jpg);
+	height: 100%;
+	background-position: center;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+
+}
+.cardtext
+{
+	grid-area: text;
+	margin: 25px;
+}
+
+.cardtext .Date
+{
+	color:rgb(255,7,110);
+	font-size: 13px;
+}
+
+.cardtext p
+{
+	color: grey;
+	font-size: 15px;
+	font-weight: 300;
+
+}
+
+.cardtext h2
+{
+	margin-top: 0px;
+
+}
+
+.cardstats
+{
+	grid-area: stats;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background: rgb(255,7,110);
+}
+
+.cardstats .stat
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	color: white;
+
+}
+.cardstats .type
+{
+	font-size: 11px;
+	font-weight: 300;
+	text-transform: uppercase;
+
+}
+
+.cardstats .value
+{
+	font-size: 22px;
+	font-weight: 500;
+
+}
+.cardstats .border
+{
+	border-left: 1px solid rgb(172,26,87);
+	border-right: 1px solid rgb(172,26,87);
+}
+
+.card:hover
+{
+transform: scale(1.2);
+box-shadow: 5px 5px 15px rgba(0,0,0.0.6);
+}

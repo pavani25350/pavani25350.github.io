@@ -1,0 +1,83 @@
+*{
+	padding:0;
+	margin:0;
+	font-family: Century Gothic;
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) , url(https://images.pexels.com/photos/399161/pexels-photo-399161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	height:100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+ul{
+	float:right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+ul li{
+	display:inline-block;
+}
+
+ul li a {
+	
+	text-decoration:none;
+	color:#000;
+	padding:10px 20px;
+	border: 1px solid #fff;
+	transition:0.6s ease; 
+}
+
+ul li.active a{
+	background-color: #fff;
+	color:#000;
+}
+ul li a:hover{
+	background-color: #fff;
+	color:#000;
+}
+
+.logo img{
+	float:left;
+	width:150px;
+	height:auto;
+	margin-top: 20px;
+	margin-left: 0px;
+}
+.main{
+	margin: auto;
+	width:1200px;
+}
+
+.middle{
+	position:absolute;
+	top:50%;
+	left:50%;
+   transform:translate(-50%,-50%);
+}
+
+.middle h1{
+	color:#000;
+	font-size:70px;
+}
+
+.button{
+	position:absolute;
+	top:60%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+.btn{
+	font-size:18px;
+    border:1px solid #000;
+    padding:10px 30px;
+    color:#000;
+    text-decoration: none;
+   
+}
+.btn:hover{
+	background-color:white;
+	color:black; 
+}
